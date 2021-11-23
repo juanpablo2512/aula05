@@ -31,23 +31,56 @@
         }
     </script>
     
-    <h1>Exercício 02</h1>
+        <div class="exercicio">
+            <h1>Exercício 02</h1>
+        </div>
+        <div class="mutliplicarr">
+            <input type="number" name="numero1" id="numero1" class="numero1"> *
+        <input type="number" name="numero2" id="numero2" class="numero2">
+        <input type="submit" value="Mutiplicar" onclick="multiplicar()">
+        </div>
 
-    <input type="number" name="numero1" id="numero1" class="nemero1"> *
-    <input type="number" name="numero2" id="numero2" class="nemero2">
-    <input type="submit" value="Mutiplicar" onclick="mutiplicar"()>
-    <div class="resultado" id="resultado"></div>
-    <script>
-        function multiplicar() {
-            let numero1 = document.getElementById('numero1');
-            let numero2 = document.getElementById('numero2');
-            let resultado = document.getElementById('resultado');
-            let valor1 = Number(numero.value);
-            let valor2 = Number(numero2.value);
-            let multiplicacao = valor1 * valor2;
-            resultado.innerHTML = 'O valor da mutiplicação entre ' + valor1 + valor2 + 'é igual a ' + multiplicacao }'; 
-        }
+        
+        <div class="resultado" id="resultado"></div>
+        <script>
+            function multiplicar() {
+                let numero1 = document.getElementById('numero1');
+                let numero2 = document.getElementById('numero2');
+                let resultado = document.getElementById('resultado');
+                let valor1 = Number(numero1.value);
+                let valor2 = Number(numero2.value);
+                let multiplicacao = valor1 * valor2;
+                resultado.innerHTML = 'O valor da multiplicação entre ' + valor1 + valor2 + 'é igual a ' + multiplicacao;
+            }
 
-    </script>
+        </script>
+
+    <div class="sistema"><h1>Sistema de mutas - Aula 06</h1></div>
+    <div class="corpo">
+        <p><h4>Velocidade do carro</h4> </p>
+        <input type="number" name="velocidade" id="velocidade"> <strong id="quilometros">KM/h</strong>
+        <p></p>
+        <p><input type="submit" value="verificar" onclick="calcular()" id="verificar"></p>
+        <div id="vResultado"></div>
+        <script>
+            function calcular(){
+                // define a velocidade pegando o Id do input velocidade
+                let velocidade = document.getElementById('velocidade');
+                let vResultado = document.getElementById('vResultado');
+                let vel = Number(velocidade.value);
+                // res.innerHTML = ` Sua velocidade atual é de <strong>${vel} KM/h</strong>`
+                vResultado.innerHTML = 'Sua velocidade atual é de <strong>' + vel + 'KM/h </strong>'
+                if(vel >= 50){
+                    vResultado.innerHTML += ' Você está <strong>Multado!</strong>';
+                    // o codigo à baixo é uma caixa de alerta se caso a volocidade for superior a 50 km/h
+                    // alert(' Você está MULTADO! Pois sua velocidade é ' + vel + ' KM/h');
+        
+                }  else{
+                    vResultado.innerHTML += ' Parabéns, você não foi multado.';
+                }
+            }
+
+        </script>
+    </div>
 </body>
 </html>

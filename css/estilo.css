@@ -8,5 +8,48 @@
     width: 500px;
 }
 .enviar {
-    color: black;
+    color: rgb(119, 31, 31);
+    text-align: center;
+}
+.exercicio {
+    text-align: center;
+    color:gray;
+    background-color: lightcyan;
+    width: 500px;
+    padding: 70px;
+    margin:  0 auto;
+    }
+    .resultado {
+        color: chartreuse;
+        text-align: center;
+    }
+    .sistema {
+        text-align: center;
+        color: rgb(65, 52, 52);
+        background-color: rgb(107, 78, 77);
+        margin: 0 auto;
+        width: 500px;
+        padding: 5px;
+
+    }
+    .corpo {
+        text-align: center;
+        color: rgb(37, 30, 30);
+        background-color: rgb(128, 34, 34);
+        padding: 50px;
+        width: 500px;
+        margin: 0 auto;
+    }
+    #verificar {
+        text-align: center;
+        color: black;
+    }
+body {
+    background-color: rgb(26, 26, 43);
+}
+#velocidade {
+    color: white;
+}
+.mutiplicarr {
+    text-align: center;
 }
